@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style media="screen">
+    body {
+      height: 1000px;
+    }
+
+    nav a {
+      font-weight: bold;
+      margin: 10px 20px 10px 20px;
+    }
+
+    .home img {
+      width: 100%;
+      height: 70%;
+      opacity: 0.6;
+    }
+
+    .content {
+      position: absolute;
+      top: 100px;
+      margin: auto;
+      text-align: center;
+      left: 500px;
+    }
+
+    .data {
+      position: absolute;
+      bottom: 840px;
+      margin: auto;
+      text-align: center;
+      left: 50px;
+      -moz-box-shadow: 0 0 5px #888;
+      -webkit-box-shadow: 0 0 5px#888;
+      box-shadow: 0 0 5px #888;
+    }
+
+    .dp {
+      margin-left: 45px;
+      margin-top: 10px;
+      width: 200px;
+      height: 300px;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    #container {
+      position: absolute;
+      bottom: 140px;
+      margin: auto;
+      text-align: center;
+      left: 100px;
+      -moz-box-shadow: 0 0 5px #888;
+      -webkit-box-shadow: 0 0 5px#888;
+      box-shadow: 0 0 5px #888;
+    }
+  </style>
+  <script src="{{url_for('static',filename='next.js')}}"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Start Exam</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><i class="fas fa-pencil-ruler"></i> V-Scribe</a>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="home">
+    <img src="https://image.freepik.com/free-photo/closeup-person-filling-out-questionary-form_1262-2259.jpg"
+      alt="bgimg">
+  </div>
+  <div class="content">
+    <h1>Click anywhere to start the exam.</h1>
+  </div>
+  <div class="card data" style="width: 18rem;">
+    <img class="dp" src="{{url_for('static', filename='studboi.jpg')}}" />
+    <div class="card-body">
+      <h5 class="card-title">Name : Sateyndra Mishra</h5>
+      <h5 class="card-title">Roll Number : 1092</h5>
+      <h5 class="card-title">Subject : English</h5>
+    </div>
+  </div>
+  <!-- <script>
+ var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({video: true})
+  .then(function(stream) {
+    video.srcObject = stream;
+  })
+  .catch(function(err0r) {
+    console.log("Something went wrong!");
+  });
+}
+
+</script> -->
+</body>
+
+</html>
